@@ -6,7 +6,7 @@ class TG
 
     public function request($method, $params = [])
     {
-        $url = 'https://api.telegram.org/bot' . $this->token . '/' . $method;
+        $url = 'https://api.telegram.org/kkod_onko_bot' . $this->token . '/' . $method;
         $curl = curl_init();
 
         curl_setopt($curl, CURLOPT_URL, $url);
